@@ -116,23 +116,6 @@ $(function() {
     }
   };
 
-
-  // sticker
-
-  var controller = new ScrollMagic.Controller();
-
-  var scene = new ScrollMagic.Scene(
-    {triggerElement: ".s-about__sticker-trigger-start", triggerHook: "onEnter"})
-    .setClassToggle(".s-about__sticker", "s-about__sticker--affix-start")
-    //.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-    .addTo(controller);
-
-  var scene = new ScrollMagic.Scene(
-    {triggerElement: ".s-about__sticker-trigger-finish", triggerHook: "onEnter"})
-    .setClassToggle(".s-about__sticker", "s-about__sticker--affix-finish")
-    //.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-    .addTo(controller);
-
 });
 
 // сохраняем поля querystring utm_* в куках и потом передаём в формы в поле traffic_source
