@@ -1,18 +1,42 @@
 ---
 layout: base
+href: https://goo.gl/T7zYz5
 ---
 
-{% assign url = 'https://docs.google.com/forms/d/e/1FAIpQLSfXjBlKG1f08a-6D2qahmo1XensXZF-jHrKqCParlz8bJEgtA/viewform' %}
+<div class="p-y-lg p-x block-inverse b-head text-center">
+  <nav class="navbar navbar-transparent m-b-0">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-com">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <h4 class="text-uppercase m-y-0">Николай Воробьёв</h4>
+        </a>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-collapse-com">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#for">Для кого</a></li>
+          <li><a href="#steps">Порядок работы</a></li>
+          <li><a href="#case">Кейсы</a></li>
+          <li><a href="#price">Цена</a></li>
+          <li><a href="#join">Записаться</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div class="block text-center">
-  <div class="container">
+  <div class="container m-y-lg">
     <h4 class="text-muted">Быстрая упаковка бизнеса и привлечение клиентов</h4>
-    <h1 class="m-y-lg">Помогу создать убойное предложение, найти горячих клиентов и&nbsp;заключить первые 10 сделок за&nbsp;две недели</h1>
-    <a href="{{ url }}" class="btn btn-primary m-y-lg">Записаться на бесплатную консультацию</a>
+    <h1 class="m-y-lg b-head__title">Помогу создать убойное предложение, найти горячих клиентов и&nbsp;заключить первые 10 сделок за&nbsp;две недели</h1>
+    <a href="{{ page.href }}" class="btn btn-default m-t b-head__button">Записаться на бесплатную консультацию</a>
   </div>
 </div>
 
-<div class="block block-bordered b-odd">
+<div class="block block-bordered b-odd" id="for">
   <div class="container">
     <h1>Технология, которая позволит стартовать бизнес, привлечь клиентов, увеличить прибыль</h1>
     <div class="row m-t-lg m-b-md">
@@ -158,7 +182,7 @@ layout: base
   </div>
 </div>
 
-<div class="block block-bordered">
+<div class="block block-bordered" id="steps">
   <div class="container">
     <h1>Ты получишь и внедришь пошаговый план запуска бизнеса</h1>
     
@@ -228,7 +252,7 @@ layout: base
   </div>
 </div>
 
-<div class="block block-bordered">
+<div class="block block-bordered" id="case">
   <div class="container">
     <h1 class="text-center m-b-lg">У кого уже получилось</h1>
     <div class="row case m-b-lg">
@@ -273,7 +297,7 @@ layout: base
   </div>
 </div>
 
-<div class="block block-bordered b-odd">
+<div class="block block-bordered b-odd" id="price">
   <div class="container">
     <h1>Цена — экономишь 50&nbsp;000 рублей и получаешь результаты плюс знания</h1>
     <p class="lead">Чтобы запустить свое дело, обычно нужно сделать лендинг или коммерческое предложение и запустить рекламу. Хороший лендинг обычно стоит 50&nbsp;000, реклама еще 20&nbsp;000, итого 70&nbsp;000. Я же предлагаю начать бизнес за 20&nbsp;000 и получить знания, которые помогут дальше действовать самому.</p>
@@ -319,7 +343,7 @@ layout: base
   </div>
 </div>
 
-<div class="block block-bordered">
+<div class="block block-bordered" id="join">
   <div class="container">
     <h1 class="text-center m-b-lg">Первый шаг — бесплатная консультация</h1>
 
@@ -337,7 +361,7 @@ layout: base
 
         <p>Рекомендации ты сможешь применить сегодня же</p>
 
-        <a href="{{ url }}" class="btn btn-primary btn-block m-t">Записаться на бесплатную консультацию</a>
+        <a href="{{ page.href }}" class="btn btn-primary btn-block m-t">Записаться на бесплатную консультацию</a>
       </div>
     </div>
   </div>
