@@ -87,6 +87,7 @@ layout: base
           <form method="post" action="http://bot.nickvorobiov.com/order.php" data-toggle="validator">
             <input type="hidden" name="trello-list-id" value="581106bb5061c4c44f197e86" />
             <input type="hidden" name="redirect" value="http://ok.nickvorobiov.com/ok/" />
+            <input type="hidden" name="traffic_source" />
             <div class="form-group">
               <label>Чем занят?</label>
               <div class="help-block with-errors"></div>
@@ -145,8 +146,8 @@ layout: base
               </div>
             </div>
             <div class="form-group">
-              <label for="inputPassword" class="control-label">Адрес твоей страницы ВКонтакте</label>
-              <input required="required" name="vk" type="text" class="form-control" placeholder="https://vk.com/id...">
+              <label for="input-vk" class="control-label">Адрес твоей страницы ВКонтакте</label>
+              <input id="input-vk" required="required" name="vk" type="text" class="form-control" placeholder="https://vk.com/id...">
             </div>
             <button type="submit" class="btn btn-primary btn-block b-join__button">Записаться на вебинар и получить план увеличения дохода</button>
           </form>
