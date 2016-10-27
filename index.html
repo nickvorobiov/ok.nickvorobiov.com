@@ -118,28 +118,28 @@ layout: base
               <div class="help-block with-errors"></div>
               <div class="radio custom-control custom-radio">
                 <label>
-                  <input required="required" type="radio" name="income" value="{{ 'до 40 000 рублей в месяц' | urlencode }}">
+                  <input required="required" type="radio" name="income" value="0-40">
                   <span class="custom-control-indicator"></span>
                   до 40 000 рублей в месяц
                 </label>
               </div>
               <div class="radio custom-control custom-radio">
                 <label>
-                  <input required="required" type="radio" name="income" value="{{ 'от 40 000 до 70 000 рублей в месяц' | urlencode }}">
+                  <input required="required" type="radio" name="income" value="40-70">
                   <span class="custom-control-indicator"></span>
                   от 40 000 до 70 000 рублей в месяц
                 </label>
               </div>
               <div class="radio custom-control custom-radio">
                 <label>
-                  <input required="required" type="radio" name="income" value="{{ 'от 70 000 до 100 000 рублей в месяц' | urlencode }}">
+                  <input required="required" type="radio" name="income" value="70-100">
                   <span class="custom-control-indicator"></span>
                   от 70 000 до 100 000 рублей в месяц
                 </label>
               </div>
               <div class="radio custom-control custom-radio">
                 <label>
-                  <input required="required" type="radio" name="income" value="{{ 'от 100 000 рублей в месяц' | urlencode }}">
+                  <input required="required" type="radio" name="income" value="100plus">
                   <span class="custom-control-indicator"></span>
                   от 100 000 рублей в месяц
                 </label>
@@ -175,3 +175,18 @@ layout: base
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('input[type=radio][name=income]').change(function() {
+    if (this.value == '0-40') {
+      $('input[name=trello-list-id]').val('581200aae428840d0e2f6c92');
+      $('input[name=redirect').val('http://ok.nickvorobiov.com/ok-low/');
+    }
+    else {
+      $('input[name=trello-list-id]').val('581106bb5061c4c44f197e86');
+      $('input[name=redirect').val('http://ok.nickvorobiov.com/ok/');
+    }
+  });
+});
+</script>
