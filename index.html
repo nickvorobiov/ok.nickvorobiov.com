@@ -1,7 +1,5 @@
 ---
 layout: base
-href: "https://oauth.vk.com/authorize?client_id=5693193&display=page&redirect_uri=http://ok.nickvorobiov.com/form/&scope=email&response_type=token&v=5.59&state=customstring"
-experiment_key: 132482419-1
 ---
 
 <div class="p-y-lg p-x block-inverse b-head text-center">
@@ -31,7 +29,7 @@ experiment_key: 132482419-1
   <div class="container m-y-lg">
     <h1 class="m-y-lg b-head__title">Бесплатный вебинар<br/>по привлечению клиентов</h1>
     <h4 class="text-muted">Для специалистов, предпринимателей и бизнесменов</h4>
-    <a href="{{ page.href }}" class="btn btn-default m-t b-head__button">Получить доступ к вебинару</a>
+    <a href="#join" class="btn btn-default m-t b-head__button">Записаться на бесплатный вебинар</a>
   </div>
 </div>
 
@@ -79,6 +77,97 @@ experiment_key: 132482419-1
   </div>
 </div>
 
+<div class="block block-bordered s-join" id="join">
+  <div class="container">
+    <h1 class="text-center m-b-lg">Ты получишь персональный план<br/>увеличения дохода в&nbsp;3&nbsp;раза</h1>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+          <p class="lead text-center">Записаться на вебинар</p>
+          <form method="post" action="http://bot.nickvorobiov.com/order.php" data-toggle="validator">
+            <input type="hidden" name="trello-list-id" value="581106bb5061c4c44f197e86" />
+            <input type="hidden" name="redirect" value="http://ok.nickvorobiov.com/ok/" />
+            <input type="hidden" name="traffic_source" />
+            <input type="hidden" name="roistat" />
+            <div class="form-group">
+              <label>Чем занят?</label>
+              <div class="help-block with-errors"></div>
+              <div class="radio custom-control custom-radio">
+                <label>
+                  <input required="required" type="radio" name="current" value="{{ 'Работаю по найму' | urlencode }}">
+                  <span class="custom-control-indicator"></span>
+                  Работаю по найму, хочу запустить бизнес
+                </label>
+              </div>
+              <div class="radio custom-control custom-radio">
+                <label>
+                  <input required="required" type="radio" name="current" value="{{ 'Работаю на себя' | urlencode }}">
+                  <span class="custom-control-indicator"></span>
+                  Работаю на себя, хочу больше заказов
+                </label>
+              </div>
+              <div class="radio custom-control custom-radio">
+                <label>
+                  <input required="required" type="radio" name="current" value="{{ 'Есть работающий бизнес' | urlencode }}">
+                  <span class="custom-control-indicator"></span>
+                  Есть работающий бизнес, хочу больше прибыли
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Уровень дохода</label>
+              <div class="help-block with-errors"></div>
+              <div class="radio custom-control custom-radio">
+                <label>
+                  <input required="required" type="radio" name="income" value="0-40">
+                  <span class="custom-control-indicator"></span>
+                  до 40 000 рублей в месяц
+                </label>
+              </div>
+              <div class="radio custom-control custom-radio">
+                <label>
+                  <input required="required" type="radio" name="income" value="40-70">
+                  <span class="custom-control-indicator"></span>
+                  от 40 000 до 70 000 рублей в месяц
+                </label>
+              </div>
+              <div class="radio custom-control custom-radio">
+                <label>
+                  <input required="required" type="radio" name="income" value="70-100">
+                  <span class="custom-control-indicator"></span>
+                  от 70 000 до 100 000 рублей в месяц
+                </label>
+              </div>
+              <div class="radio custom-control custom-radio">
+                <label>
+                  <input required="required" type="radio" name="income" value="100plus">
+                  <span class="custom-control-indicator"></span>
+                  от 100 000 рублей в месяц
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-name" class="control-label">Имя</label>
+              <input id="input-name" required="required" name="name" type="text" class="form-control" placeholder="Иван Иванов">
+            </div>
+            <div class="form-group">
+              <label for="input-phone" class="control-label">Телефон</label>
+              <input id="input-phone" required="required" name="phone" type="text" class="form-control" placeholder="+7 (921) 765-43-21">
+            </div>
+            <div class="form-group">
+              <label for="input-email" class="control-label">Электронная почта</label>
+              <input id="input-email" required="required" name="email" type="text" class="form-control" placeholder="ivan@ivanov.com">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block b-join__button">Записаться на вебинар и получить план увеличения дохода</button>
+          </form>
+        </div>
+        <p>Вебинары проходят регулярно.<br/>После того, как ты оставишь заявку, ты сможешь выбрать удобную дату и время вебинара.</p>
+        <!--p>После того, как ты оставишь заявку, я свяжусь с тобой ВКонтакте и мы договоримся о времени консультации</p-->
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="block block-bordered b-testimonials" id="testimonials">
   <div class="container">
     <h1 class="text-center m-b-lg">Отзывы о консультациях</h1>
@@ -95,8 +184,18 @@ experiment_key: 132482419-1
     </div>
   </div>
 </div>
-<div class="block block-bordered s-join" id="join">
-  <div class="container text-center">
-    <a href="{{ page.href }}" class="btn btn-default m-t b-head__button">Получить доступ к вебинару</a>
-  </div>
-</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('input[type=radio][name=income]').change(function() {
+    if (this.value == '0-40') {
+      $('input[name=trello-list-id]').val('581200aae428840d0e2f6c92');
+      $('input[name=redirect').val('http://ok.nickvorobiov.com/ok-low/');
+    }
+    else {
+      $('input[name=trello-list-id]').val('581106bb5061c4c44f197e86');
+      $('input[name=redirect').val('http://ok.nickvorobiov.com/ok/');
+    }
+  });
+});
+</script>
