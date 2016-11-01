@@ -171,4 +171,8 @@ if (Object.keys(utmParams).length > 0) {
 
 $(document).ready(function() {
   $('input[name=traffic_source]').val(trafficSource);
+
+  $('form').submit(function(){
+    $('input[name=roistat]').val(getCookie('roistat_visit'));
+  })
 });
