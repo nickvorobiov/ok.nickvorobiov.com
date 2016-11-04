@@ -161,9 +161,9 @@ function setCookie(cookie, value){
 var utmParams = getURLUTMParameters();
 var trafficSource;
 if (Object.keys(utmParams).length > 0) {
-  var cookie = JSON.stringify(utmParams);
-  console.log(cookie);
-  setCookie('traffic_source', cookie);
+  var trafficSource = JSON.stringify(utmParams);
+  console.log(trafficSource);
+  setCookie('traffic_source', trafficSource);
 } else {
   trafficSource = getCookie('traffic_source');
   console.log(trafficSource);
@@ -171,8 +171,12 @@ if (Object.keys(utmParams).length > 0) {
 
 $(document).ready(function() {
   $('input[name=traffic_source]').val(trafficSource);
+  $('input[data-field=traffic_source]').val(trafficSource);
 
   $('form').submit(function(){
     $('input[name=roistat]').val(getCookie('roistat_visit'));
+    $('input[data-field=roistat]').val(getCookie('roistat_visit'));
   })
+
+  $('input[data-field=referer]').val(document.location.href);
 });
