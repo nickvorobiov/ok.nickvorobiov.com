@@ -1,6 +1,7 @@
 ---
 layout: base
 eventdate: "5 ноября в 20:00 мск"
+permalink: /three/
 ---
 
 <div class="p-y-lg p-x b-head-three text-center">
@@ -161,57 +162,18 @@ eventdate: "5 ноября в 20:00 мск"
       <div class="col-md-8 col-md-offset-2">
         <div class="well">
           <p class="lead text-center">Регистрация на&nbsp;вебинар {{ page.eventdate }}</p>
-          <form method="post" action="http://bot.nickvorobiov.com/order.php" data-toggle="validator">
-            <input type="hidden" name="trello-list-id" value="581106bb5061c4c44f197e86" />
-            <input type="hidden" name="redirect" value="http://ok.nickvorobiov.com/ok-three/" />
-            <input type="hidden" name="traffic_source" />
-            <input type="hidden" name="roistat" />
+          <form method="post" action="https://nickvorobiov.activehosted.com/proc.php" data-toggle="validator">
+            <input type="hidden" name="u" value="5" />
+            <input type="hidden" name="f" value="5" />
+            <input type="hidden" name="s" />
+            <input type="hidden" name="c" value="0" />
+            <input type="hidden" name="m" value="0" />
+            <input type="hidden" name="act" value="sub" />
+            <input type="hidden" name="v" value="2" />
+
             <div class="form-group">
-              <label>Сколько чистой прибыли принёс тебе бизнес за октябрь?</label>
-              <div class="help-block with-errors"></div>
-              <div class="radio custom-control custom-radio">
-                <label>
-                  <input required="required" type="radio" name="income" value="0-40">
-                  <span class="custom-control-indicator"></span>
-                  менее 40 000 рублей за месяц
-                </label>
-              </div>
-              <div class="radio custom-control custom-radio">
-                <label>
-                  <input required="required" type="radio" name="income" value="40-100">
-                  <span class="custom-control-indicator"></span>
-                  от 40 000 до 100 000 рублей за месяц
-                </label>
-              </div>
-              <div class="radio custom-control custom-radio">
-                <label>
-                  <input required="required" type="radio" name="income" value="100-300">
-                  <span class="custom-control-indicator"></span>
-                  от 100 000 до 300 000 рублей за месяц
-                </label>
-              </div>
-              <div class="radio custom-control custom-radio">
-                <label>
-                  <input required="required" type="radio" name="income" value="300-1M">
-                  <span class="custom-control-indicator"></span>
-                  от 300 000 до 1 миллиона рублей за месяц
-                </label>
-              </div>
-              <div class="radio custom-control custom-radio">
-                <label>
-                  <input required="required" type="radio" name="income" value="1Mplus">
-                  <span class="custom-control-indicator"></span>
-                  более 1 миллиона рублей за месяц
-                </label>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="input-name" class="control-label">Имя</label>
-              <input id="input-name" required="required" name="name" type="text" class="form-control" placeholder="Иван Иванов">
-            </div>
-            <div class="form-group">
-              <label for="input-phone" class="control-label">Телефон</label>
-              <input id="input-phone" required="required" name="phone" type="text" class="form-control" placeholder="+7 (921) 765-43-21">
+              <label for="input-name" class="control-label">Имя Фамилия</label>
+              <input id="input-name" required="required" name="fullname" type="text" class="form-control" placeholder="Иван Иванов">
             </div>
             <div class="form-group">
               <label for="input-email" class="control-label">Электронная почта</label>
@@ -246,18 +208,3 @@ eventdate: "5 ноября в 20:00 мск"
 </div>
 
 <p class="text-center">ООО РЕАЛЬНОСТЬ, +7 921 7618506 САНКТ-ПЕТЕРБУРГ, УЛ. НЕКРАСОВА 40 <a href="http://soedinennost.com/privacy">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></p>
-
-<script type="text/javascript">
-$(document).ready(function() {
-  $('input[type=radio][name=income]').change(function() {
-    if (this.value == '0-40') {
-      $('input[name=trello-list-id]').val('581200aae428840d0e2f6c92');
-      $('input[name=redirect').val('http://ok.nickvorobiov.com/ok-low/');
-    }
-    else {
-      $('input[name=trello-list-id]').val('581106bb5061c4c44f197e86');
-      $('input[name=redirect').val('http://ok.nickvorobiov.com/ok/');
-    }
-  });
-});
-</script>
