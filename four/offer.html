@@ -2,8 +2,123 @@
 layout: base
 ---
 
-<div class="block text-center p-y">
+<div class="block block-bordered">
   <div class="container">
-    <h1>Информация о&nbsp;тренинге появится на&nbsp;этой странице во&nbsp;время вебинара</h1>
+    <h1 class="text-center">Выбери вариант и&nbsp;внеси предоплату, чтобы зарегистрироваться на&nbsp;курс</h1>
+  </div>
+</div>
+
+<div class="block block-bordered">
+  <div class="container">
+    <h1 class="text-center">Выбор ниши</h1>
+
+    <p class="lead text-center">Для тех, кто пока не уверен, чем заниматься</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Результаты</h3>
+        <ul class="results">
+          <li>Исследуем твои возможности и интересы по 11 осям</li>
+          <li>Найдём, где пересекается то, что взлетит с наибольшей вероятностью, с тем, что больше всего вдохновляет</li>
+          <li>Выберешь направления, в которые будешь готов вкладываться на 100%</li>
+          <li>Избавишься от сомнений в правильности выбора</li>
+          <li>Получишь 20-30 вариантов ниш для тестирования</li>
+          <li>Перестанешь прокисать на работе, появится свет в конце тоннеля</li>
+          <li>Появится видение, как уже через два месяца ты сможешь зарабатывать в 3 раза больше</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Время: 10 дней</h3>
+
+        <h3>Цена: 10 т.р.</h3>
+
+        {% assign targets = 'Предоплата 10% за выбор ниши' %}
+        {% assign sum = 1000 %}
+        {% assign successurl = 'http://ok.nickvorobiov.com/four/paid/' %}
+        <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=41001469914505&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets={{ targets | url_encode }}&targets-hint={{ targets-hint | url_encode }}&default-sum={{ sum }}&button-text=01&fio=on&mail=on&phone=on&successURL={{ successurl | url_escape }}" width="450" height="213"></iframe>
+      </div>
+  </div>
+</div>
+<div class="block block-bordered">
+  <div class="container">
+    <h1 class="text-center">Тестирование в группе</h1>
+
+    <p class="lead text-center">Для тех, кто уже знает, чем хочет заняться, но ещё не уверен, что взлетит</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Результаты</h3>
+        <ul class="results">
+          <li>Аналитика ЦА и потребностей</li>
+          <li>Выявлены критерии принятия решения</li>
+          <li>Собрана и внедрена обратная связь по предложению</li>
+          <li>Прописано УТП</li>
+          <li>Проработана воронка продаж</li>
+          <li>Написаны скрипты продажи</li>
+          <li>Подсвечены самые интересные места твоего предложения</li>
+          <li>Собран список из 100 мест, где стоит искать твою ЦА</li>
+          <li>Сформулирован убойный первый шаг с высокой конверсией</li>
+          <li>Есть инструкция по закрытию клиентов с первого шага</li>
+          <li>Получили контакты 100 клиентов</li>
+          <li>Сделали им предложение</li>
+          <li>Закрыли 10 сделок</li>
+          <li>Отбиваешь вложения — идём дальше</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Время: 30 дней</h3>
+
+        <h3>Цена: 20 т.р.</h3>
+
+        {% assign targets = 'Предоплата 10% за тестирование в группе' %}
+        {% assign sum = 2000 %}
+        {% assign successurl = 'http://ok.nickvorobiov.com/four/paid/' %}
+        <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=41001469914505&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets={{ targets | url_encode }}&targets-hint={{ targets-hint | url_encode }}&default-sum={{ sum }}&button-text=01&fio=on&mail=on&phone=on&successURL={{ successurl | url_escape }}" width="450" height="213"></iframe>
+      </div>
+  </div>
+</div>
+<div class="block block-bordered">
+  <div class="container">
+    <h1 class="text-center">Персональное тестирование до результата</h1>
+
+    <p class="lead text-center">Для тех, кто точно знает, что взлетит, и важно довести до результата</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Условия участия</h3>
+        <ul>
+          <li>Твой доход не менее 100к</li>
+          <li>Тебе важно получить результат от 1М рублей</li>
+        </ul>
+
+        <h3>Результаты</h3>
+        <ul class="results">
+          <li>Лендинги я делаю за тебя</li>
+          <li>Скрипты делаю за тебя или даю готовые</li>
+          <li>Помогаю в подборе специалистов</li>
+          <li>Обратная связь по каждому пункту</li>
+          <li>Контроль и корректировка пути каждый день — точно сделаешь всё правильно</li>
+          <li>Оплата привязана к результату</li>
+          <li>Я шкурно заинтересован в том, чтобы у тебя получилось</li>
+          <li>Ты выжимаешь максимальный результат из своей ниши</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Время: 60 дней</h3>
+
+        <h3>Цена: 50% от результата</h3>
+
+        <ol class="paymentorder">
+          <li>50 т.р. за первый месяц</li>
+          <li>50 т.р. за второй месяц</li>
+          <li>остаток по факту</li>
+        </ol>
+
+        {% assign targets = 'Предоплата 10% за первый месяц персонального тестирования' %}
+        {% assign sum = 5000 %}
+        {% assign successurl = 'http://ok.nickvorobiov.com/four/paid/' %}
+        <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=41001469914505&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets={{ targets | url_encode }}&targets-hint=&default-sum={{ sum }}&button-text=01&fio=on&mail=on&phone=on&successURL={{ successurl | url_escape }}" width="450" height="213"></iframe>
+      </div>
+    </div>
   </div>
 </div>
